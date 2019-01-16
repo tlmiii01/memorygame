@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Goku",
+    "image": "https://pbs.twimg.com/profile_images/1053055123193122816/IUwo6l_Q_400x400.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Vegita",
+    "image": "https://static.tvtropes.org/pmwiki/pub/images/vegetavwx2014_928.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Piccolo",
+    "image": "https://imgix.ranker.com/user_node_img/50081/1001614838/original/my-ears-photo-u1?w=650&q=50&fm=jpg&fit=crop&crop=faces"
+  }
+]
