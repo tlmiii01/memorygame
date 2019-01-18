@@ -2,8 +2,8 @@ import React from "react";
 
 const style = {
   cardStyle: {
-    height: "200px",
-    width: "200px"
+    height: "250px",
+    width: "250px"
   }
 }
 
@@ -16,7 +16,7 @@ function processClick(props) {
 
 var ClickableCard = (props) => (
   <div className="card img-container" onClick={() => processClick(props)}>
-    <img style={style.cardStyle} src={props.image} alt={props.name} />
+    <img className="mx-auto" style={style.cardStyle} src={props.image} alt={props.name} />
   </div>
 
 );

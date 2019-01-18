@@ -12,27 +12,44 @@ class App extends React.Component {
     cards: cards,
     score: 0,
     highScore: 0,
+    message: "Click a character!!",
     clickedCharacters: []
   };
 
   clickedCharacters = (id) => {
-    console.log(id);
+    // console.log(id);
     if (this.state.clickedCharacters.includes(id)) {
-      console.log(`You have clicked this already!`);
+      // console.log(`You have clicked this already!`);
+      this.setState({ message: "Game Over!" });
       this.setState({
         clickedCharacters: [],
         score: 0
       });
     } else {
-      this.setState({clickedCharacters: [...this.state.clickedCharacters, id]});
-      this.setState({score: this.state.score + 1 });
+      this.setState({ clickedCharacters: [...this.state.clickedCharacters, id] });
+      this.setState({ score: this.state.score + 1 });
+      // Check against the high score and update as necessary
       if (this.state.score >= this.state.highScore) {
-        this.setState({highScore: this.state.highScore + 1});
+        this.setState({ highScore: this.state.highScore + 1 });
       }
-      console.log(`You clicked a different picture!`)
+      
+      // End game if the score is equal to the number of cards
+      // At this point, score is one less, so I am going
+      // to adjust accordingly
+      if (this.state.score + 1 === cards.length) {
+        this.setState({message:`You Win!!`});
+        this.setState({
+          score: 0,
+          clickedCharacters: []
+        });
+      } else {
+        this.setState({ message: "Good Guess!!" })
+      }
+
     }
   }
 
+  // Found this algorithm online...
   reArrangeCards = (array) => {
     let currentIndex = array.length;
 
@@ -55,8 +72,8 @@ class App extends React.Component {
         <ClickableCard
           name={card.name}
           image={card.image}
-          reArrangeCards={() => {this.reArrangeCards(this.state.cards)}}
-          clickedCharacters={() => {this.clickedCharacters(card.id)}}
+          reArrangeCards={() => { this.reArrangeCards(this.state.cards) }}
+          clickedCharacters={() => { this.clickedCharacters(card.id) }}
         />
       </section>
     ))
@@ -65,7 +82,11 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Navbar />
+        <Navbar
+          score={this.state.score}
+          highScore={this.state.highScore}
+          message={this.state.message}
+        />
         <Jumbotron />
         <div className="container">
           <div className="row">
