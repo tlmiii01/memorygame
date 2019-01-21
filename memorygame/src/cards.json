@@ -18,5 +18,45 @@
     "id": 4,
     "name": "Android 18",
     "image": "https://res.cloudinary.com/teepublic/image/private/s---ERkpBmK--/t_Preview/b_rgb:ffffff,c_limit,f_jpg,h_630,q_90,w_630/v1502186019/production/designs/1801392_1.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Frieza",
+    "image": "https://imgix.ranker.com/user_node_img/50081/1001612547/original/22-photo-u1?w=650&q=50&fm=jpg&fit=crop&crop=faces"
+  },
+  {
+    "id": 6,
+    "name": "Krillin",
+    "image": "http://miso.moe/wp-content/uploads/2018/01/krillinp-1-1024x970.png"
+  },
+  {
+    "id": 7,
+    "name": "Cell",
+    "image": "https://vignette.wikia.nocookie.net/dragonball/images/a/ad/Dbz-cell-06.jpg/revision/latest?cb=20090725012856"
+  },
+  {
+    "id": 8,
+    "name": "Majin Buu",
+    "image": "https://res.cloudinary.com/teepublic/image/private/s--MHF5k71J--/t_Preview/b_rgb:484849,c_limit,f_jpg,h_630,q_90,w_630/v1493311067/production/designs/1531476_1.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Gohan",
+    "image": "https://imgix.ranker.com/user_node_img/50081/1001614819/original/my-father-and-_39_s-son-photo-u2?w=650&q=50&fm=jpg&fit=crop&crop=faces"
+  },
+  {
+    "id": 10,
+    "name": "Bulma",
+    "image": "https://pre00.deviantart.net/a8ca/th/pre/f/2017/321/0/0/bulma_by_karoine-dbu0dtp.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Master Roshi",
+    "image": "https://res.cloudinary.com/teepublic/image/private/s--7Y5wWyWT--/t_Preview/b_rgb:484849,c_limit,f_jpg,h_630,q_90,w_630/v1509615910/production/designs/2017749_9.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Trunks",
+    "image": "https://i.pinimg.com/originals/89/32/4a/89324a46daaee4410e2cbcec794fd47a.jpg"
   }
 ]

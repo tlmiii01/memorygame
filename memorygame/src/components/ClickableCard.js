@@ -15,7 +15,7 @@ function processClick(props) {
 };
 
 var ClickableCard = (props) => (
-  <div className="card img-container" onClick={() => processClick(props)}>
+  <div className="card img-container mb-3" onClick={() => processClick(props)}>
     <img className="mx-auto" style={style.cardStyle} src={props.image} alt={props.name} />
   </div>
 
